@@ -181,7 +181,6 @@ body {
 
 
 /* Responsivo */
-
 @media(max-width: 700px) {
 
     .header {
@@ -196,17 +195,59 @@ body {
 
 
     .tarefa {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+
+    /* Checkbox e nome ficam juntos */
+    .check-item {
+        width: 18px;
+        height: 18px;
     }
 
 
     .tarefa-texto {
-        width: 100%;
+        display: inline;
+        flex: none;
+        width: auto;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+    /* coloca checkbox e texto lado a lado */
+    .tarefa > .check-item,
+    .tarefa > .tarefa-texto {
+        align-self: flex-start;
     }
 
 
     .qtd {
-        flex: 1;
+        width: 100%;
+        padding: 12px;
+    }
+
+
+    .tarefa button {
+        width: 100%;
+        padding: 12px;
+    }
+
+
+    .tarefa span {
+        width: 100%;
+        font-size: 18px;
+    }
+
+
+    .botao-excluir {
+        margin-top: 5px;
     }
 
 }
