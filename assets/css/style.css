@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+/* Cabeçalho */
+
+.header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.header h1 {
+    margin-right: auto;
+}
+
+
+.header input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* Botão adicionar */
+
+.adc {
+    padding: 10px 15px;
+    border: none;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.adc:hover {
+    background-color: #1b5e20;
+}
+
+
+
+/* Lista */
+
+.lista-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.lista-container h2 {
+    margin-bottom: 15px;
+}
+
+
+#totalGeral {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/* Itens criados pelo JS */
+
+.list {
+    list-style: none;
+}
+
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* Checkbox */
+
+.check-item {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/* Texto da tarefa */
+
+.tarefa-texto {
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+
+
+/* Campos quantidade e valor */
+
+.qtd {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* Botão calcular */
+
+.tarefa button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.tarefa button:not(.botao-excluir) {
+    background-color: #1976d2;
+    color: white;
+}
+
+
+
+/* Resultado */
+
+.tarefa span {
+    min-width: 90px;
+    font-weight: bold;
+}
+
+
+
+/* Botão excluir */
+
+.botao-excluir {
+    background-color: #d32f2f;
+    color: white;
+}
+
+
+.botao-excluir:hover {
+    background-color: #b71c1c;
+}
+
+
+
+/* Item concluído */
+
+.concluido {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+
+/* Responsivo */
+
+@media(max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .header h1 {
+        margin-right: 0;
+    }
+
+
+    .tarefa {
+        flex-wrap: wrap;
+    }
+
+
+    .tarefa-texto {
+        width: 100%;
+    }
+
+
+    .qtd {
+        flex: 1;
+    }
+
+}

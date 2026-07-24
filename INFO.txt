@@ -1,0 +1,20 @@
+Crie um To Do List.
+
+Requisitos:
+
+Campo para digitar uma tarefa.
+Botão "Adicionar".
+As tarefas aparecem abaixo.
+Cada tarefa deve possuir um botão "Excluir".
+Se o usuário tentar adicionar uma tarefa vazia, exiba uma mensagem de erro.
+
+Extras
+
+Mostrar a quantidade de tarefas.
+Permitir marcar como concluída.
+
+Treina
+
+Eventos
+Arrays
+Manipulação do DOM
